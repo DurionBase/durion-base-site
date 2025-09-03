@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Services – Durion Base</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="wrap">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="Durion Base logo" />
+        <div>
+          <h1>Durion Base – FZCO</h1>
+          <div class="small">IFZA Business Park, Dubai Silicon Oasis, Dubai, UAE</div>
+        </div>
+      </div>
+      <nav style="margin-top:14px">
+        <a href="index.html">Home</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h2>What we do</h2>
+    <div class="card">
+      <h3>Smart contract development</h3>
+      <ul>
+        <li>ERC‑20/721/1155 implementations</li>
+        <li>Access control, pausability, upgradeability</li>
+        <li>Gas profiling & optimization</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Security reviews (lightweight & focused)</h3>
+      <ul>
+        <li>Static analysis + manual review</li>
+        <li>Findings with severity levels & fixes</li>
+        <li>Scope tailored to budget and code size</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Deployments & integration</h3>
+      <ul>
+        <li>Testnet/mainnet pipelines, Etherscan verification</li>
+        <li>Backend event/webhook integration</li>
+        <li>Ops runbooks & client handover</li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap">© <span id="year"></span> Durion Base – FZCO. All rights reserved.</div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
