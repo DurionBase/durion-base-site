@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact – Durion Base</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="wrap">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="Durion Base logo" />
+        <div>
+          <h1>Durion Base – FZCO</h1>
+          <div class="small">Let’s work together.</div>
+        </div>
+      </div>
+      <nav style="margin-top:14px">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h2>Get in touch</h2>
+    <div class="card">
+      <table class="table">
+        <tr><td><strong>Email</strong></td><td><a href="mailto:info@durionbase.com">info@durionbase.com</a></td></tr>
+        <tr><td><strong>Registered address</strong></td><td>IFZA Business Park, Dubai Silicon Oasis, Dubai, UAE</td></tr>
+        <tr><td><strong>Bank (for invoices)</strong></td><td>Wio Bank · IBAN: AE42 0860 0000 0964 5266 385 · BIC: WIOBAEADXXX</td></tr>
+      </table>
+      <p class="small">For security, we never request seed phrases or private keys. We do not operate custodial wallets.</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap">© <span id="year"></span> Durion Base – FZCO. All rights reserved.</div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
