@@ -3,72 +3,64 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>About - Durion Base</title>
-  <meta name="description" content="Learn about Durion Base, a UAE-based IT consulting and blockchain development firm.">
+  <title>About – Durion Base</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-<header class="header">
-  <div class="wrap">
-    <div class="brand">
-      <img src="assets/logo.svg" alt="Durion Base logo">
-      <div>
-        <h1>Durion Base – FZCO</h1>
-        <div class="small">Pioneering IT & Blockchain Consulting</div>
+  <!-- Header -->
+  <header class="header">
+    <div class="wrap">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Durion Base logo" />
+        <div>
+          <h1>Durion Base – FZCO</h1>
+          <div class="small">Engineering trust in digital systems</div>
+        </div>
       </div>
+      <nav style="margin-top:14px">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-    <nav style="margin-top:14px">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="about.html" class="active">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
-<main class="wrap">
-  <section>
+  </header>
+
+  <main class="wrap">
     <h2>About Durion Base</h2>
-    <div class="card">
-      <p>Durion Base is an IT consulting and blockchain development firm headquartered in the United Arab Emirates. We specialize in next‑generation digital solutions, offering expertise in both emerging blockchain protocols and robust enterprise IT strategies.</p>
-      <p>From our base in Dubai, we operate globally, bridging the gap between innovative technology and practical enterprise needs. Our mission is to empower businesses with secure, scalable, and future‑proof technology that enables them to adapt to a digital‑first world.</p>
+    <section class="card">
+      <p>Durion Base is a Dubai‑headquartered IT consulting and blockchain security firm dedicated to enabling organisations to thrive in a digital‑first world. We bridge deep security research with practical engineering to deliver lasting improvements for our clients.</p>
+    </section>
+    <section class="card">
+      <h3>Our Story</h3>
+      <p>Founded by engineers and security researchers, Durion Base set out to raise the bar for secure software. Over the years we’ve worked with startups and enterprises alike to design high‑assurance systems and navigate the complexities of modern cyber threats. Our team draws experience from finance, embedded systems and open‑source development.</p>
+    </section>
+    <section class="card">
+      <h3>Why Choose Us?</h3>
+      <ul>
+        <li><strong>Deep expertise:</strong> We apply formal methods and advanced tooling to uncover vulnerabilities across multiple domains.</li>
+        <li><strong>Attacker’s perspective:</strong> Our approach anticipates real‑world threats to deliver practical, actionable guidance.</li>
+        <li><strong>Collaborative process:</strong> We integrate with your team through technical onboarding, open communication and thorough debriefs.</li>
+        <li><strong>Open source commitment:</strong> We contribute to the community by releasing tools and research for the benefit of all.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h3>Our People</h3>
+      <p>Durion Base is home to engineers, cryptographers, researchers and strategists from around the globe. Together we share a passion for advancing the security of digital ecosystems and mentoring the next generation of builders.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap">
+      © <span id="year"></span> Durion Base – FZCO. All rights reserved.
+      <div class="small"><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms &amp; Conditions</a></div>
     </div>
-  </section>
-  <section>
-    <h3>Our Story</h3>
-    <div class="card">
-      <p>Founded with a simple vision – to help businesses stay resilient and innovative – Durion Base combines deep technical expertise with strategic consulting. We design blockchain ecosystems, implement IT infrastructures, and prepare organizations for crises before they occur.</p>
-      <p>Whether you’re launching a decentralized platform, building cross‑border payment networks, or safeguarding enterprise systems, our consulting approach emphasizes clarity and execution. We deliver lean scopes that match budgets and timelines while ensuring security, auditability, and compliance.</p>
-    </div>
-  </section>
-  <section>
-    <h3>Our Values</h3>
-    <div class="grid two">
-      <div class="card">
-        <h4>Innovation</h4>
-        <p>Constantly advancing with new blockchain protocols, cloud architectures, and IT solutions that anticipate what’s next.</p>
-      </div>
-      <div class="card">
-        <h4>Resilience</h4>
-        <p>Ensuring businesses can withstand and recover from cyber crises through rigorous preparation and proactive defence.</p>
-      </div>
-      <div class="card">
-        <h4>Integrity</h4>
-        <p>Providing unbiased, transparent, and trusted consulting that puts clients’ long‑term interests first.</p>
-      </div>
-    </div>
-  </section>
-  <section>
-    <h3>Why Choose Us?</h3>
-    <div class="card">
-      <p>We blend blockchain innovation with crisis consulting and rigorous audits to deliver security and scalability for organizations navigating high‑stakes digital environments. Our consultants work hands‑on to implement resilient systems, train your teams, and leave you with clear documentation and playbooks.</p>
-    </div>
-  </section>
-</main>
-<footer class="footer">
-  <div class="wrap">
-    © 2025 Durion Base FZ‑LLC. All rights reserved.
-    <div class="small">Trade License: [insert] · Email: contact@durionbase.com</div>
-  </div>
-</footer>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
