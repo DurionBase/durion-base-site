@@ -1,10 +1,14 @@
 :root{
-  --ink:#1b2430;
+  --ink:#E2E8F0;
+  --bg:#0A0C24;
+  --card-bg:#121D3A;
+  --card-border:#1F2A48;
   --brand:#2a365b;
-  --muted:#6b7280;
-  --bg:#ffffff;
-  --line:#e5e7eb;
+  --accent:#E22344;
+  --muted:#9CA3AF;
+  --line:#2E3A56;
 }
+
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{
@@ -13,69 +17,86 @@ body{
   background:var(--bg);
   line-height:1.6;
 }
+
 .header{
   background:linear-gradient(90deg,var(--brand),#1d2849);
   color:#fff;
   padding:24px 0;
   margin:0 0 24px 0;
 }
+
 .wrap{
   max-width:1000px;
   margin:0 auto;
   padding:0 20px;
 }
+
 nav a{
   margin-right:18px;
   color:#cfe0ff;
   text-decoration:none;
   font-weight:600;
 }
+
 nav a.active,nav a:hover{
   color:#fff;
   text-decoration:underline;
 }
+
 .brand{
   display:flex;
   gap:14px;
   align-items:center;
 }
+
 .brand img{
   height:36px;
   width:36px;
 }
-h1{margin:0;font-size:28px}
+
+h1{margin:0;font-size:32px}
 h2{margin:24px 0 12px}
+h3{margin:12px 0;font-size:20px}
+
 .hero{
   display:grid;
-  gap:8px;
-  padding:8px 0 12px;
+  gap:12px;
+  padding:12px 0 24px;
 }
+
 .card{
-  border:1px solid var(--line);
+  border:1px solid var(--card-border);
   border-radius:12px;
-  padding:18px;
-  background:#fff;
+  padding:24px;
+  background:var(--card-bg);
 }
+
 .grid{
   display:grid;
-  gap:18px;
+  gap:24px;
 }
+
 .grid.two{
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 }
+
 ul{margin:10px 0 0 18px}
+
 .cta{
   display:inline-block;
-  background:#0f766e;
+  background:var(--accent);
   color:#fff;
-  padding:10px 14px;
-  border-radius:8px;
+  padding:12px 18px;
+  border-radius:10px;
   text-decoration:none;
+  font-weight:600;
 }
+
 .small{
   color:var(--muted);
   font-size:.95rem;
 }
+
 .footer{
   border-top:1px solid var(--line);
   margin-top:40px;
@@ -83,19 +104,28 @@ ul{margin:10px 0 0 18px}
   color:var(--muted);
   font-size:.9rem;
 }
+
 .table{
   width:100%;
   border-collapse:collapse;
 }
+
 .table td{
   border-bottom:1px solid var(--line);
   padding:10px 6px;
 }
+
 .badge{
   display:inline-block;
-  background:#eef2ff;
-  color:#3730a3;
-  padding:4px 8px;
+  background:rgba(226,35,68,0.15);
+  color:var(--accent);
+  padding:6px 10px;
   border-radius:999px;
   font-size:.8rem;
+}
+
+.icon{
+  font-size:32px;
+  color:var(--accent);
+  margin-bottom:12px;
 }
